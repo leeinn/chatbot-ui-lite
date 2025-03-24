@@ -17,7 +17,7 @@ export const OpenAIStream = async (
   const res = await fetch("http://8.129.19.173:880/v1/chat-messages", {
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer app-TBNWugaXXMgFgVeZsB2pgVc5`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
     },
     method: "POST",
     body: JSON.stringify({

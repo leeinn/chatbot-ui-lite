@@ -29,8 +29,8 @@ export const ChatMessage: FC<Props> = ({ message }) => {
         <div
           className={`flex items-center ${
             message.role === "assistant"
-              ? "bg-neutral-200 text-neutral-900"
-              : "bg-blue-500 text-white"
+              ? " text-neutral-900"
+              : "bg-[#e0e5e9] text-[#262626]"
           } rounded-2xl px-3 py-2 max-w-[67%] whitespace-pre-wrap`}
           style={{ overflowWrap: "anywhere" }}
         >
